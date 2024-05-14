@@ -30,4 +30,11 @@ describe('findSpaceship', function() {
     });
 });
 
+describe('findSpaceship', function() {
+    it('should correctly find the spaceship the spaceship with one row', function() {
+        const mapWithSpaceshipInFirstColumn = "..X...";
+        expect(findSpaceship(mapWithSpaceshipInFirstColumn)).toEqual([0, 2]);
+    });
+});
+
 
