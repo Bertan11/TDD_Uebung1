@@ -15,4 +15,12 @@ describe('findSpaceship', function() {
     });
 });
 
+describe('findSpaceship', function() {
+    it('should correctly find the spaceship at the bottom right corner of the map', function() {
+        const mapWithSpaceshipAtTopRight = "........\n........\n........\n........";
+
+        expect(findSpaceship(mapWithSpaceshipAtTopRight)).toEqual("Spaceship lost forever.");
+    });
+});
+
 
