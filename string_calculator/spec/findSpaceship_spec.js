@@ -6,7 +6,13 @@ describe('findSpaceship', function() {
         const map = "";
         expect(findSpaceship(map)).toEqual("Spaceship lost forever.");
     });
-    
-  
 });
+
+describe('findSpaceship', function() {
+    it('should correctly find the spaceship at the top left corner of the map', function() {
+        const mapWithSpaceshipAtTopLeft = "X.......\n........\n........\n........";
+        expect(findSpaceship(mapWithSpaceshipAtTopLeft)).toEqual([0, 0]);
+    });
+});
+
 
