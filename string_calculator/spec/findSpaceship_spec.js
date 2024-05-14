@@ -23,4 +23,11 @@ describe('findSpaceship', function() {
     });
 });
 
+describe('findSpaceship', function() {
+    it('should correctly find the spaceship in the middle of the map', function() {
+        const mapWithSpaceshipInMiddle = "...\n.X.\n...";
+        expect(findSpaceship(mapWithSpaceshipInMiddle)).toEqual([1, 1]);
+    });
+});
+
 
